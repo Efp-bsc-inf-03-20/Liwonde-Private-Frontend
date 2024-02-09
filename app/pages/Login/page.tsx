@@ -1,14 +1,15 @@
+'use client';
 import LoginForm from "@/app/Components/LoginForm";
-import { useRouter } from "next/router";
+import { useRouter ,usePathname,useSearchParams} from "next/navigation";
 export default function LoginPage() {
   const router = useRouter();
-
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const handleLoginSuccess = () => {
-    // Handle successful login, if needed
+    console.log("Login successful")
   };
-
   const redirectToAdmin = () => {
-    router.push("/admin");
+    router.push("/pages/dashboard");
   };
 
   const redirectToDepartment = (departmentId: string) => {

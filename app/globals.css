@@ -1,3 +1,9 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles can go here */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -68,7 +74,7 @@ body {
 .services{
   list-style: none;
   display: flex;
-  
+
 }
 .clicks{
   position: relative;
@@ -105,8 +111,8 @@ body {
   display: block;
   margin: 10px;
   border-bottom: 1px rgb(8, 8, 8);
-  
-  
+
+
 }
 .clicks:hover .list .ref{
   width: 100px;
@@ -136,7 +142,7 @@ body {
  border-color: gray;
  color: green;
  background-color: white;
- 
+
 }
 .button:hover{
   cursor: pointer;
@@ -159,7 +165,7 @@ h1{
   text-align: center;
   font-weight: 100px;
   color: green;
-  
+
 }
 h3{
   text-align: center;
@@ -235,7 +241,7 @@ p{
 
 .mission-picture {
   flex: 1;
-  padding: 20px; 
+  padding: 20px;
 }
 .msi{
   text-align: left;
@@ -244,16 +250,16 @@ p{
   text-decoration: underline;
   padding: 5px;
   text-align: center;
-  
+
 }
 .part{
   text-align: center
-  
+
 }
 .vis{
   display: flex;
   font-size: 20px;
-  
+
 }
 .vision1{
   text-decoration: underline;
@@ -262,7 +268,7 @@ p{
 }
 .vis1{
  display: flex;
-  font-size: 20px; 
+  font-size: 20px;
   text-align: center;
   list-style: disc;
 }
@@ -310,7 +316,7 @@ p{
   padding: 25px;
   align-items: left;
   margin-right: 20px;
-  
+
 }
 .footer{
   color: white;
