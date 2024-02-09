@@ -41,7 +41,7 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts","roles.enum.ts" ],
   "exclude": ["node_modules"]
 >>>>>>> c92025c (whole code)
 }

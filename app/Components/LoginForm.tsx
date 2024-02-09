@@ -1,8 +1,9 @@
+'use client'
 import React, { useState } from "react";
 import "./style.css";
 import icon from "../images/icon.png";
 import Image from "next/image";
-
+const API_URL = "http://localhost:3000/LPHStaff/login";
 interface LoginFormProps {
   onLoginSuccess: () => void;
   redirectToAdmin: () => void;
@@ -10,17 +11,21 @@ interface LoginFormProps {
 }
 
 export default function LoginForm({
-  onLoginSuccess,
   redirectToAdmin,
   redirectToDepartment,
 }: LoginFormProps) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
   const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsLoading(true);
+    setMessage("");
 
     try {
+      console.log("Submitting form...");
       const response = await fetch("http://localhost:3000/LPHStaff/login", {
         method: "POST",
         headers: {
@@ -29,33 +34,34 @@ export default function LoginForm({
         body: JSON.stringify({ username, password }),
       });
 
-      const data = await response.json();
+  if (response.ok) {
+  console.log("Login successful!");
+  const api = await response.json();
+  const data = api.user;
+  console.log("User data:", data);
 
-      if (response.ok) {
-        console.log("Login successful!");
-        console.log("Received data:", data);
-
-        // Check if the user is an admin or a doctor using data.role or other appropriate property
-        onLoginSuccess(); // Assuming successful login handling on parent component
-
-        if (data.role === "admin") {
-          redirectToAdmin();
-        } else if (data.role === "doctor" && data.assignedDepartment) {
-          redirectToDepartment(data.assignedDepartment);
-        } else {
-          console.error(
-            "Invalid credentials or insufficient role information."
-          );
-          // Handle invalid role scenario gracefully (e.g., display error message)
-        }
-      } else {
-        console.error("Login failed:", data.message);
-        // Handle login failure gracefully (e.g., display error message)
+  if (data.roles.includes("admin")) {
+    redirectToAdmin();
+  } else if (data.roles.includes("admin") && data.assignedDepartment) {
+    console.error("User is not an admin. Redirecting accordingly...");
+    redirectToDepartment(data.assignedDepartment);
+  } else {
+    console.error("Invalid credentials or insufficient role information.");
+    setMessage("Invalid credentials or insufficient role information.");
+  }
       }
     } catch (error) {
       console.error("Error during login:", error);
-      // Handle network or other errors gracefully (e.g., display generic error message)
+      setMessage("Login failed. Please try again.");
+    } finally {
+      setIsLoading(false);
     }
+  };
+
+  console.log("Rendering login component...");
+
+  const handleButtonClick = () => {
+    console.log("Button clicked!");
   };
 
   return (
@@ -98,10 +104,15 @@ export default function LoginForm({
                 placeholder="*******"
               />
             </div>
-            <button className="button1" type="submit">
-              Login
+            <button
+              className="button1"
+              type="submit"
+              onClick={handleButtonClick}
+            >
+              {isLoading ? "Logging in..." : "Login"}
             </button>
           </form>
+          {message && <p className="text-red-500">{message}</p>}
         </div>
       </div>
     </div>
