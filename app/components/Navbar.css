@@ -1,0 +1,78 @@
+.nav {
+  border-bottom: 1px solid #101010;
+  min-height: 8vh;
+}
+
+.TopNav {
+  padding: 0 4rem;
+  min-height: 2vh;
+  /* border-bottom: 1px solid #101010; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoImage {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.logoText{
+display: flex;
+  align-items: center;
+  gap: -1rem;
+  cursor: pointer;
+}
+.TopNavItems {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 200px;
+
+  li {
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.InnerNav {
+  padding: 0 4rem;
+  min-height: 6vh;
+  /* border-bottom: 1px solid #101010; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.InnerNavItems {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  li {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.StyledButton {
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #000;
+  color: #fff;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }
+}

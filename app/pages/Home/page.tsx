@@ -2,32 +2,26 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import "./globals.css";
+import "../../styles/globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import icon from "./images/icon.png";
-import location from "./images/location.png";
-import phone from "./images/phone.png";
-import time from "./images/time.png";
-import image from "./images/image.jpeg";
-import image1 from "./images/image1.jpeg";
-import image2 from "./images/image2.png";
-import image3 from "./images/image3.webp";
-import pharma from "./images/pharma.jpeg";
-import recep from "./images/recep.jpeg";
-import lab from "./images/lab.jpeg";
-import mom from "./images/mom.jpeg";
-import theatre from "./images/theatre.webp";
-import ray from "./images/ray.webp";
-import opd from "./images/opd.jpeg";
-import dental from "./images/dental.webp";
-import talk from "./images/talk.webp";
-import "./globals.css";
+import icon from "../../../public/images/icon.png";
+import location from "../../../public/images/location.png";
+import phone from "../../../public/images/phone.png";
+import time from "../../../public/images/time.png";
+import image from "../../../public/images/image.jpeg";
+import image1 from "../../../public/images/image1.jpeg";
+import image2 from "../../../public/images/image2.png";
+import image3 from "../../../public/images/image3.webp";
+import pharma from "../../../public/images/pharma.jpeg";
+import recep from "../../../public/images/recep.jpeg";
+import opd from "../../../public/images/opd.jpeg";
+import talk from "../../../public/images/talk.webp";
 import { TypeAnimation } from "react-type-animation";
-import appo from "./images/appo.jpeg";
-import ambulance from "./images/ambulance.webp";
-import team from "./images/team.jpeg";
-import heart from "./images/heart.png";
+import appo from "../../../public/images/appo.jpeg";
+import ambulance from "../../../public/images/ambulance.webp";
+import team from "../../../public/images/team.jpeg";
+import heart from "../../../public/images/heart.png";
 
 export default function Homepage() {
   const Images = [image, image2, image1, image3];
@@ -36,7 +30,7 @@ export default function Homepage() {
     const slideNext = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % Images.length);
     };
-    const interval = setInterval(slideNext, 3000);
+    const interval = setInterval(slideNext, 1000);
     return () => clearInterval(interval);
   }, [Images.length]);
   const settings = {
