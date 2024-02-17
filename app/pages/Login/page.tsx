@@ -11,11 +11,9 @@ export default function LoginPage() {
   const redirectToAdmin = () => {
     router.push("/pages/dashboard");
   };
-
   const redirectToDepartment = (departmentId: string) => {
     router.push(`/department/${departmentId}`);
   };
-
   return (
     <div>
       <LoginForm

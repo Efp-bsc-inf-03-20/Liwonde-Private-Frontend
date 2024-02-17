@@ -10,6 +10,7 @@ import image from "../../../public/images/image.png";
 import image1 from "../../../public/images/image1.png";
 import image2 from "../../../public/images/image2.png";
 import image3 from "../../../public/images/image4.png";
+import Navbar from "../../components/Navbars";
 export default function Herosection() {
   const slideImages = [image, image2, image1, image3];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,6 +47,11 @@ export default function Herosection() {
             </div>
           ))}
         </Slider>
+        {/* Position InnerNav overlaying the hero section */}
+        <div className="absolute inset-x-0 top-0 z-10">
+          {" "}
+          <Navbar />
+        </div>
       </div>
     </>
   );
