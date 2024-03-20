@@ -1,0 +1,153 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+ 
+ 
+  }  
+  #service-section{
+    background-color: green;
+    width: 100%;
+    height: 700px;
+    border-color: #000;
+    display: flex; 
+    margin-top: 60px;
+  
+    flex-direction: column;
+
+  }
+  .service-offered{
+    color: white;
+    font-weight: 100;
+    margin-top: 30px;
+    text-align: center;
+    /* margin-left: 400px; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  }
+  .phamarcy-service{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  #access2{
+    width: 1500px;
+    height: 435px;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid white;
+    display: flex;
+  }
+  .appointment2{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(67, 143, 67);
+    border: 1px solid darkgray;
+    margin-top: 10px;
+    margin-left: 70px;
+    /* margin-right: 10px; */
+    box-shadow: 0 12px 13px rgb(0, 0, 0, 0.16),0 12px 13px rgb(0, 0, 0, 0.16),0 12px 13px rgb(0, 0, 0, 0.16);
+  }
+  .appointment1{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(67, 143, 67);
+    border: 1px solid darkgray;
+    margin-top: 10px;
+    margin-left: 170px;
+    margin-right: 10px;
+    box-shadow: 0 12px 13px rgb(0, 0, 0, 0.16),0 12px 13px rgb(0, 0, 0, 0.16),0 12px 13px rgb(0, 0, 0, 0.16);
+    
+  }
+  .reception-state{
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top: 30px;
+    font-size: 120%;
+    line-height: 1.5;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+  .reception-head{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+  .more-button{
+    margin-top: 120px;
+    margin-left: 650px;
+    width: 150px;
+    height: 50px;
+    font-size: 100%;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  }
+  .more-button:hover{
+    background-color: white;
+    color: green;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+  }
+  @media  (max-width:500px){
+    #service-section{
+      width: 390px;
+      height: 270px;
+      margin-top: 20px;
+    }
+    #access2{
+      margin-left: 2px;
+      width: 380px;
+      height: 220px;
+  
+    }
+    .service-offered{
+      font-size: 70%;
+      margin-top: 10px;
+    }
+    .appointment1{
+      margin-left: 2px;
+      width: 122px;
+      height: 187px;
+      margin-right: 1px;
+    }
+    .reception-state{
+      font-size: 50%;
+      margin-top: 0px;
+    }
+    .reception-head{
+      font-size: 70%;
+      margin-top: 0px;
+      font-weight: 300;
+    }
+    .service-image{
+      width: 120px;
+      height: 50px;
+    }
+    .more-button{
+     margin-left: 150px;
+     margin-top: 10px;
+     font-size: 40%;
+     width: 80px;
+     height: 30px;
+     padding-left: 15px;
+     padding-top: 6px;
+     border: 0.5px solid white;
+     margin-bottom: 5px;
+    }
+    
+  }
+  
