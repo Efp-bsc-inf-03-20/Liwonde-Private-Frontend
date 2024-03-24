@@ -11,6 +11,7 @@ import speed from '../images/speed.webp'
 import Navbar from "@/componets/navbar";
 
 
+
 export default function Ambulance(){
     return(
         <div>
@@ -88,7 +89,8 @@ export default function Ambulance(){
          
            
           <div className="circle">
-          <h1>Steps to follow</h1>
+          <h1 className="stepe">Steps to follow</h1>
+          
           <div className="steps">
           <div className="step"><span>1</span></div>
                 <div className="line"></div>
@@ -146,8 +148,8 @@ export default function Ambulance(){
                         <Image className="icon1"
                                 src={icon}
                                 alt="icon"
-                                width={150}
-                                height={150}
+                                width={200}
+                                height={200}
                                 style={{ marginRight:'10px'}}
                                 />
                             </div>

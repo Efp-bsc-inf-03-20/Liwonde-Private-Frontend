@@ -6,7 +6,7 @@ import icon from '../../images/icon.png'
 import Image from "next/image";
 import search from '../images/search.png'
 import { Search } from "react-bootstrap-icons";
-
+import Login from "../Login/page";
 
 export default function Finance(){
     
@@ -18,7 +18,7 @@ export default function Finance(){
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Records</a></li>
                     <li><a href="Sale">Sales</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="Login">Logout</a></li>
                 </ul>
             </div>
             <div id="table">

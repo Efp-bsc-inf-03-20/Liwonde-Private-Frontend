@@ -54,9 +54,9 @@ body{
   padding-left: 70px;
 }
 .ambulan{
-  color: white;
+  color:white;
   font-size: 15px;
-  font-weight: 50;
+  
   padding-top: 5px;
   padding-left: 120px;
   padding-right: 120px;
@@ -64,9 +64,9 @@ body{
 }
 .category{
   width: 350px;
-  height: 370px;
+  height: 350px;
   background-color: white;
-  margin-left: 120px;
+  margin-left: 450px;
   margin-bottom: 10px;
   border-radius: 10px;
   justify-content: center;
@@ -74,7 +74,7 @@ body{
 }
 .category3{
   width: 350px;
-  height: 370px;
+  height: 350px;
   background-color: white;
   margin-left: 260px;
   margin-bottom: 10px;
@@ -90,12 +90,15 @@ body{
 }
 .category1{
   font-size: 10px;
-  padding-top: 10px;
+  text-align: center;
+  color:green
+  
 }
 .category2{
-  font-size: 20px;
-  padding-top: 10px;
-  margin-left: 20px;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 13px;
+  
 }
 
 #lan{
@@ -104,8 +107,9 @@ body{
   font-size: 30px;
 }
 #lane{
-  color: green;
+  color:white;
   padding-top: 70px;
+  text-align: center;
   font-size: 30px;
   padding: 10px;
 }
@@ -120,7 +124,7 @@ body{
   margin-left: 50px;
   margin-top: 50px;
   padding: 10px;
-  margin-right: 50px;
+  margin-right: 70px;
 }
 
 .step {
@@ -132,6 +136,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 70px;
+  
   animation: colorChange 3s infinite;
 }
 .step1{
@@ -143,6 +149,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
   animation: colorChange1 6s infinite;
 }
 .step2{
@@ -187,6 +194,12 @@ body{
   font-weight: bold;
   color: white;
 }
+.stepe{
+  text-align: center;
+  padding-top: 35px;
+  font-size: 25px;
+  font-weight: bolder;
+}
 
 .step-content {
   height: 200px;
@@ -217,6 +230,8 @@ body{
 .content{
   color: white;
   justify-content: center;
+  font-size: 12px;
+  text-align: center;
   padding: 10px;
   padding-top: 10px;
 }
@@ -224,6 +239,7 @@ body{
   color: white;
   font-size: 20px;
   padding-top: 10px;
+  text-align: center;
 
   text-decoration: underline;
   justify-content: center;
@@ -232,9 +248,10 @@ body{
   height: 200px;
   width: 350px;
   max-width: 200px;
+  
   text-align: left;
   background-color: green;
-  margin-left: 315px;
+  margin-left: 305px;
   margin-top: 10px;
  
   align-items: center;
@@ -264,6 +281,7 @@ body{
 }
 .container{
   display: flex;
+
 }
 @keyframes colorChange {
   0%{
@@ -309,6 +327,9 @@ body{
 
 .part1{
   margin-top: 30px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30;
 }
 .button1:hover{
   cursor: pointer;
@@ -344,7 +365,7 @@ ul{
   left: 0;
   bottom: -10px;
   font-weight: 300;
-  color: gray;
+  color: white;
   display: block;
   transition: all 0.3s ease;
   
@@ -362,7 +383,7 @@ ul{
   left: 0;
   bottom: -10px;
   font-weight: 300;
-  color: gray;
+  color: white;
   display: block;
   transition: all 0.3s ease;
 }

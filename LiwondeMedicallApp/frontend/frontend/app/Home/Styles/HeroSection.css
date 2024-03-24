@@ -43,22 +43,25 @@
       rgba(25, 24, 3, 0.4),
       rgba(25, 24, 3, 0.4)
     ),
-      url('../../images/liwonde.jpeg');
+      url('../../images/liwonde.jpeg'),
+      url('https://scontent.fblz2-1.fna.fbcdn.net/v/t39.30808-6/299986301_436890945124337_2631510593769677728_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHaeSpEWkxjZhgpNQSvQ2qlNOJJIutMVWc04kki60xVZ8gLugL1UcxLx-7sig7QeysOkYbmRPuG81BsyufIyr4Z&_nc_ohc=8yUV6Q0g61YAX9GaC9z&_nc_zt=23&_nc_ht=scontent.fblz2-1.fna&oh=00_AfAwRXDf9tJYK7nGCdIqUlUyLS9-YKCmcpYdEz1wKCirog&oe=66050CD9');
     }
   }
   .welcome-text{
-    color: white;
+    color:white;
     margin-top: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .span{
-    color: yellow;
+    color:white;
+    padding-top:4000px;
     font-size: 150%;
    
   }
   .first-button{
-    margin-top: 0px;
-    margin-left: 650px;
+    margin-top: 40px;
+    align-items: center;
+    margin-left: 850px;
     width: 200px;
     height: 60px;
     font-size: 150%;
@@ -70,6 +73,15 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
   }
+
+  .wel{
+    color: white;
+    padding-top: 400px;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+
   .first-button:hover{
     background-color: white;
     color: green;
@@ -79,7 +91,7 @@
   }
   
   .hospital-name{
-    padding-top: 350px;
+    padding-top: 30px;
     color: white;
     font-size: 300%;
     text-align: center;
@@ -150,3 +162,10 @@
       margin-left: 150px;
     }
   } */
+
+  @media(min-width:1920px){
+      #welcome-section{
+
+        height: 900px;
+      }
+  }

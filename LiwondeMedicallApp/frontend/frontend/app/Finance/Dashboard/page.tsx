@@ -9,6 +9,7 @@ import search from '../images/search.png'
 import { Search } from "react-bootstrap-icons";
 import Login from "../Login/page";
 
+
 export default function Finance(){
     
     return(

@@ -11,6 +11,8 @@ export default function Section1(){
               "We Treat, God Heals",
               1000,
               "High quality Services offered",
+              1000,
+              "In Partnership with more Medical Schemes",
             ]}
             speed={10}
             style={{ fontSize: "2em" }}

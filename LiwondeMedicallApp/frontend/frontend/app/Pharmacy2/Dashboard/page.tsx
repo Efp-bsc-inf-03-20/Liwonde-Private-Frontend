@@ -6,6 +6,8 @@ import icon from '../../images/icon.png'
 import Image from "next/image";
 import search from '../images/search.png'
 import { Search } from "react-bootstrap-icons";
+import Login from "../Login/page";
+import Staff from "@/app/Staff/page";
 
 
 export default function Sale(){
@@ -18,7 +20,7 @@ export default function Sale(){
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Records</a></li>
                     <li><a href="Sale">Sales</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="Staff">Logout</a></li>
                 </ul>
             </div>
             <div id="table">
